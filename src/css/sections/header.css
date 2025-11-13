@@ -13,6 +13,8 @@
 .header-logo {
 }
 .header-icon {
+  width: 130px;
+  height: 52px;
 }
 
 .nav,
@@ -36,7 +38,10 @@
 }
 .menu-nav {
 }
+
 .btn-menu {
+  fill: var(--white);
 }
+
 .menu-icon {
 }
