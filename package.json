@@ -15,7 +15,8 @@
     "prettier": "^3.6.2",
     "vite": "^7.2.2",
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-static-copy": "^3.1.4"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
