@@ -1,0 +1,13 @@
+:root {
+  --purple: #6a54ff;
+  --Q: #57e1ff;
+  --white: #ffffff;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
