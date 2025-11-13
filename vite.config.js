@@ -6,7 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/TradeBlade/', // <--- добавь сюда имя своего репозитория с слэшами
+    base: '/TradeBlade/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
