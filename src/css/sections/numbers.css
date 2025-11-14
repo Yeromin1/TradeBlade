@@ -3,13 +3,16 @@
 
 .numbers .container {
   background-color: var(--white);
-  padding: 48px 0;
+  padding: 48px 16px;
+  display: grid;
+  gap: 40px;
 }
 
 .numbers__title {
   font-size: 28px;
   line-height: 129%;
   letter-spacing: -0.04em;
+  margin-bottom: 2px;
 }
 
 .numbers__title-text {
@@ -18,9 +21,31 @@
   letter-spacing: -0.04em;
   opacity: 0.5;
 }
+
 .numbers__list {
+  display: flex;
+  gap: 32px 65px;
+  flex-wrap: wrap;
 }
+
 .numbers__item {
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  opacity: 0.8;
+  display: grid;
+  gap: 4px;
+  width: 112px;
 }
+
+.width {
+  width: 147px;
+}
+
 .numbers__item-span {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--purple);
 }
