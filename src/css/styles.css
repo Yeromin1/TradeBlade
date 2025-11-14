@@ -3,3 +3,5 @@
 
 /* Sections style */
 @import url('./sections/header.css');
+@import url('./sections/copydeals.css');
+@import url('./sections/numbers.css');

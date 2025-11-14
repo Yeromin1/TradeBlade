@@ -1,0 +1,78 @@
+.copy-deals {
+}
+.container {
+}
+
+.copy-deals__container {
+  padding: 40px 0;
+}
+
+.copy-deals__picture {
+}
+
+.copy-deals__img {
+  margin-bottom: 33px;
+}
+
+.copy-deals__title-form {
+}
+
+.copy-deals__title {
+  font-size: 35px;
+  line-height: 1.26;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.copy-deals__text {
+  line-height: 1.25;
+  color: #e7f7f8;
+  margin-bottom: 24px;
+}
+
+.copy-deals__form {
+  display: flex;
+  background-color: #201a4f;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form__email {
+  background-color: #201a4f;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.form__btn {
+  border: 1px solid var(--q);
+  border-radius: 3px;
+  padding: 11px 24px;
+  width: 102px;
+  height: 42px;
+  box-shadow: 0 0 4px 0 var(--q);
+  background-color: var(--q);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__btn-start {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.copy-deals__info {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--white);
+  opacity: 0.3;
+}

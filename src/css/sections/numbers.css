@@ -1,0 +1,26 @@
+.numbers {
+}
+
+.numbers .container {
+  background-color: var(--white);
+  padding: 48px 0;
+}
+
+.numbers__title {
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+}
+
+.numbers__title-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  opacity: 0.5;
+}
+.numbers__list {
+}
+.numbers__item {
+}
+.numbers__item-span {
+}

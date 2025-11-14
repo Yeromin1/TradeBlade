@@ -7,14 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #030718;
-  padding: 0 10px;
+  height: 52px;
 }
 
 .header-logo {
 }
 .header-icon {
-  width: 120px;
+  width: 107px;
   height: 52px;
 }
 

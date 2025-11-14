@@ -1,6 +1,6 @@
 :root {
   --purple: #6a54ff;
-  --Q: #57e1ff;
+  --q: #57e1ff;
   --white: #ffffff;
 }
 
@@ -8,6 +8,5 @@
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
-  width: 100%;
-  box-sizing: border-box;
+  background-color: #030718;
 }
