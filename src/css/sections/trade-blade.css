@@ -1,0 +1,49 @@
+.tradeblade {
+}
+
+.tradeblade .container {
+  padding: 56px 16px 71px 16px;
+  display: grid;
+  gap: 40px;
+}
+
+.tradeblade__title {
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.tradeblade__list {
+  display: grid;
+  gap: 32px;
+}
+
+.tradeblade__item {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 32px;
+}
+
+.tradeblade__item-icon {
+}
+.tradeblade__icon {
+}
+.tradeblade__item-title-text {
+}
+
+.tradeblade__item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.tradeblade__text {
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white);
+}
