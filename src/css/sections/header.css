@@ -8,12 +8,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: #030718;
+  padding: 0 10px;
 }
 
 .header-logo {
 }
 .header-icon {
-  width: 130px;
+  width: 120px;
   height: 52px;
 }
 
@@ -41,6 +42,7 @@
 
 .btn-menu {
   fill: var(--white);
+  padding: 10px 0;
 }
 
 .menu-icon {
