@@ -1,0 +1,134 @@
+.past-transactions {
+}
+
+.past-transactions .container {
+  padding: 50px 16px;
+}
+
+.past-transactions__title {
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.past-transactions__title-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  color: #35ff9e;
+  opacity: 0.9;
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 24px;
+}
+
+.past-transactions__title-text::before {
+  content: '';
+  position: absolute;
+  border-radius: 3px;
+  width: 7px;
+  height: 7px;
+  background: #35ff9e;
+  left: 2px;
+  top: 8px;
+}
+
+.past-transactions__list {
+  display: flex;
+  overflow: overlay;
+  gap: 8px;
+}
+
+.past-transactions__item {
+  background-color: var(--purple);
+  width: 300px;
+  clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
+  padding: 15px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.past-transactions__container {
+  display: flex;
+  gap: 20px;
+}
+
+.past-transactions__item-NEAR-USDT {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  display: grid;
+  gap: 2px;
+  margin-bottom: 48px;
+}
+
+.text__NEAR-USDT {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+
+.past-transactions__item-profit {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.past-transactions__container-icon-profit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 9px;
+}
+
+.text__profit {
+  font-size: 28px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #35ff9e;
+  display: grid;
+  gap: 2px;
+}
+
+.past-transactions__icon {
+  stroke: #35ff9e;
+  width: 14px;
+  height: 25px;
+  fill: #35ff9e;
+}
+
+.past-transactions__item-target {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  opacity: 0.7;
+  display: flex;
+  gap: 76px;
+}
+
+.text__target {
+  font-weight: 400;
+  line-height: 1.29;
+  opacity: 0.4;
+}
+
+.past-transactions__container-icon-logo {
+}
+
+.past-transactions__icons-logo {
+  width: 152px;
+  height: 150px;
+  opacity: 0.15;
+}
