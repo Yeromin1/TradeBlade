@@ -26,6 +26,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--white);
 }
 
 img {
@@ -38,6 +39,7 @@ img {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--white);
 }
 
 button {

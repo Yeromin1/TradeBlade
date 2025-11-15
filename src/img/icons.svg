@@ -58,5 +58,14 @@
       <path fill="#abf0ff" style="fill: var(--color4, #abf0ff)" d="M9.143 6.286c0 0.631-0.512 1.143-1.143 1.143s-1.143-0.512-1.143-1.143c0-0.631 0.512-1.143 1.143-1.143s1.143 0.512 1.143 1.143z"></path>
       <path fill="#abf0ff" style="fill: var(--color4, #abf0ff)" d="M12.571 6.286c0 0.631-0.512 1.143-1.143 1.143s-1.143-0.512-1.143-1.143c0-0.631 0.512-1.143 1.143-1.143s1.143 0.512 1.143 1.143z"></path>
     </symbol>
+    <symbol id="icon-checkmark" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.7333" d="M5.333 17.5l9.899 9.899 14-21"></path>
+    </symbol>
+    <symbol id="icon-bird" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8 12.667l8 8 8-8"></path>
+    </symbol>
+    <symbol id="icon-arr-down" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8 12.667l8 8 8-8"></path>
+    </symbol>
   </defs>
 </svg>
