@@ -122,6 +122,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  align-items: baseline;
 }
 
 .tariffs__container-selected-text,
@@ -134,6 +135,7 @@
   transition:
     transform 0.3s ease,
     fill 0.3s ease;
+  fill: var(--white);
 }
 
 .tariffs__container-selected-close.active .tariffs__selected-icon-arr-down {

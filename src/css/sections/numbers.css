@@ -1,9 +1,9 @@
 .numbers {
+  padding: 48px 0;
 }
 
 .numbers .container {
   background-color: var(--white);
-  padding: 48px 16px;
   display: grid;
   gap: 40px;
 }
@@ -13,6 +13,7 @@
   line-height: 129%;
   letter-spacing: -0.04em;
   margin-bottom: 2px;
+  color: #000;
 }
 
 .numbers__title-text {
@@ -20,6 +21,7 @@
   line-height: 1.43;
   letter-spacing: -0.04em;
   opacity: 0.5;
+  color: #000;
 }
 
 .numbers__list {
