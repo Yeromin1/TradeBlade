@@ -10,3 +10,19 @@
   padding: 0 16px;
   background-color: #030718;
 }
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 80px;
+    min-width: 1440px;
+  }
+
+  .container__about-company-free {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 80px 92px 80px;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -6,43 +6,90 @@
           <use href="/public/LogoMob.svg"></use>
         </svg>
       </a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">ЦИФРЫ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">СДЕЛКИ ОНЛАЙН</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">О КОМПАНИИ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">КАК НАЧАТЬ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">ТАРИФЫ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">ОТЗЫВЫ</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">FAQ</a>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#numbers">ЦИФРЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#copy-deals">СДЕЛКИ ОНЛАЙН</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about-company">О КОМПАНИИ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#how-use">КАК НАЧАТЬ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#tariffs">ТАРИФЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">ОТЗЫВЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__btn">
+          <button type="button" class="btn-login">ВХОД</button>
+          <button type="button" class="btn-register">РЕГИСТРАЦИЯ</button>
+        </div>
+
+      <nav class="menu-nav">
+        <button class="btn-menu" type="button" data-menu-open>
+          <svg Class="menu-icon" width="32" height="32">
+            <use href="/img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </nav>
 
-      <div class="header__btn">
-        <button type="button" class="btn-login">ВХОД</button>
-        <button type="button" class="btn-register">РЕГИСТРАЦИЯ</button>
-      </div>
+      <!----------menu-mobal--is-open----------->
+    <div class="modal-menu-overlay" data-menu>
+      <div class="container container-menu-nav-address">
+        <div class="mtnu__container-btn">
+          <button class="menu-close" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="24" height="24">
+              <use href="/img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
 
-    <nav class="menu-nav">
-      <button class="btn-menu" type="button" data-menu-open>
-        <svg Class="menu-icon" width="32" height="32">
-          <use href="/img/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </nav>
+        <div class="menu-line"></div>
+
+        <div class="mobal__nav-btn">
+          <nav class="menu-mobal-nav">
+            <ul class="mobal__nav-list">
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#numbers" menu-mobal-link>ЦИФРЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#copy-deals" menu-mobal-link>СДЕЛКИ ОНЛАЙН</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#about-company" menu-mobal-link>О КОМПАНИИ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#how-use" menu-mobal-link>КАК НАЧАТЬ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#tariffs" menu-mobal-link>ТАРИФЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#" menu-mobal-link>ОТЗЫВЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#" menu-mobal-link>FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="modal-menu__btn">
+            <button type="button"    class="modal-menu__btn-register">РЕГИСТРАЦИЯ</button>
+            <button type="button" class="modal-menu__btn-login">ВХОД</button>
+          </div>
+        </div>
+    </div>
   </div>
 </header>

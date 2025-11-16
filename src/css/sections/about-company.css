@@ -25,3 +25,24 @@
 .container p.about-company-text:nth-of-type(1) {
   margin-bottom: 20px;
 }
+
+@media (min-width: 1440px) {
+  .about-company {
+    padding: 0;
+  }
+
+  .about-company .container {
+    padding: 0;
+    min-width: 413px;
+  }
+
+  .about-company__title {
+    font-size: 44px;
+    line-height: 1.27;
+    margin-bottom: 40px;
+  }
+
+  .about-company-text {
+    width: 413px;
+  }
+}

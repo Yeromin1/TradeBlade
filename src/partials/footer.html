@@ -1,3 +1,65 @@
 <footer class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <div class="footer__container-title-nav">
+      <h4 class="footer__title">Быстрая навигация</h4>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#numbers">ЦИФРЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#copy-deals">СДЕЛКИ ОНЛАЙН</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#about-company">О КОМПАНИИ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#how-use">КАК НАЧАТЬ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#tariffs">ТАРИФЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">ОТЗЫВЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__container-logo-text">
+      <a href="./index.html" class="footer__icon-link">
+        <svg class="footer__icon">
+          <use href="/public//LogoDes.svg"></use>
+        </svg>
+      </a>
+      <p class="footer__text">© 2022 TradeBlade. All rights reserved</p>
+    </div>
+  </div>
 </footer>
+
+<script>
+  setTimeout(() => {
+    const loader = document.querySelector('.loader');
+    const preloader = document.querySelector('.preloader');
+
+    if (loader) {
+      loader.style.transition = 'opacity 0.5s ease';
+      loader.style.opacity = 0;
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+
+    if (preloader) {
+      preloader.style.transition = 'opacity 0.5s ease';
+      preloader.style.opacity = 0;
+
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    }
+  }, 2000);
+</script>

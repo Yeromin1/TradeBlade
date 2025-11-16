@@ -55,9 +55,6 @@
   color: #030718;
 }
 
-.ac-panel {
-}
-
 .text-acc {
   font-size: 16px;
   line-height: 125%;
@@ -81,4 +78,29 @@
 .ac.is-active .ac-trigger {
   background-color: var(--purple) !important;
   color: var(--white) !important;
+}
+
+@media (min-width: 1440px) {
+  .questions {
+    padding: 96px 0;
+  }
+
+  .questions .container {
+    padding: 0 297px;
+  }
+
+  .questions__title {
+    font-size: 44px;
+    line-height: 1.27;
+    margin-bottom: 64px;
+  }
+
+  .ac-trigger {
+    font-size: 24px !important;
+    line-height: 1.33 !important;
+  }
+
+  .text-acc {
+    width: 814px;
+  }
 }

@@ -56,3 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
     '#tariffs__container-selected-list-id-vip'
   );
 });
+
+const futuresBtn = document.querySelector('.tariffs__btn-futures');
+const spotBtn = document.querySelector('.tariffs__btn-spot');
+
+// При наведении на .tariffs__btn-futures изменяем стиль .tariffs__btn-spot
+futuresBtn.addEventListener('mouseenter', () => {
+  spotBtn.style.backgroundColor = 'rgba(106, 84, 255, 0.4)';
+  spotBtn.style.color = 'var(--q)';
+});
+
+// При уходе с .tariffs__btn-futures восстанавливаем стиль .tariffs__btn-spot
+futuresBtn.addEventListener('mouseleave', () => {
+  spotBtn.style.backgroundColor = 'var(--q)';
+  spotBtn.style.color = '#000';
+});

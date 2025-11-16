@@ -1,6 +1,3 @@
-.tradeblade {
-}
-
 .tradeblade .container {
   padding: 56px 16px 71px 16px;
   display: grid;
@@ -26,13 +23,6 @@
   gap: 32px;
 }
 
-.tradeblade__item-icon {
-}
-.tradeblade__icon {
-}
-.tradeblade__item-title-text {
-}
-
 .tradeblade__item-title {
   font-weight: 500;
   font-size: 20px;
@@ -46,4 +36,38 @@
   font-size: 14px;
   line-height: 1.21;
   color: var(--white);
+  opacity: 0.8;
+}
+
+@media (min-width: 1440px) {
+  .tradeblade .container {
+    padding: 96px 80px;
+    display: flex;
+    gap: 176px;
+  }
+
+  .tradeblade__title {
+    font-size: 44px;
+    line-height: 1.27;
+  }
+
+  .tradeblade__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px 21px;
+  }
+
+  .tradeblade__item {
+    width: 410px;
+  }
+
+  .tradeblade__item-title {
+    font-size: 28px;
+    line-height: 1.29;
+  }
+
+  .tradeblade__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }

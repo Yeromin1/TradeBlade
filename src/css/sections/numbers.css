@@ -51,3 +51,37 @@
   letter-spacing: -0.02em;
   color: var(--purple);
 }
+
+@media (min-width: 1440px) {
+  .numbers .container {
+    display: flex;
+    gap: 156px;
+  }
+
+  .numbers__title {
+    font-size: 44px;
+    line-height: 1.27;
+    margin-bottom: 4px;
+  }
+
+  .numbers__list {
+    align-items: end;
+    gap: 0;
+  }
+
+  .numbers__item {
+    width: auto;
+  }
+
+  .numbers__list .numbers__item:nth-child(1) {
+    margin-right: 129px;
+  }
+
+  .numbers__list .numbers__item:nth-child(2) {
+    margin-right: 73px;
+  }
+
+  .numbers__item-span {
+    font-size: 60px;
+  }
+}
