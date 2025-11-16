@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { resolve, relative, sep } from 'path';
 import fs from 'fs';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
@@ -9,17 +9,18 @@ const getHtmlEntries = () => {
   const pagesDir = resolve(__dirname, 'src/partials');
   const entries = {};
 
+  if (!fs.existsSync(pagesDir)) return entries;
+
   const walk = dir => {
     fs.readdirSync(dir).forEach(file => {
       const fullPath = resolve(dir, file);
       if (fs.statSync(fullPath).isDirectory()) {
         walk(fullPath);
       } else if (file.endsWith('.html')) {
-        const name = fullPath
-          .replace(pagesDir + '/', '')
-          .replace('.html', '')
-          .replace(/\//g, '-');
-        entries[name] = fullPath;
+        // безопасно получить путь относительно pagesDir и стабилизировать разделители
+        const rel = relative(pagesDir, fullPath).replace(/\\/g, '/'); // windows -> posix
+        const name = rel.replace('.html', '').replace(/\//g, '-');
+        entries[name] = fullPath; // значение — абсолютный путь корректен для rollup input
       }
     });
   };
@@ -31,7 +32,7 @@ const getHtmlEntries = () => {
 export default defineConfig(({ command }) => {
   return {
     root: 'src',
-    base: '/TradeBlade/',
+    base: '/TradeBlade/', // проверь, точно ли так называется репозиторий в URL (регистр)
     build: {
       outDir: '../dist',
       emptyOutDir: true,
@@ -44,7 +45,9 @@ export default defineConfig(({ command }) => {
           manualChunks(id) {
             if (id.includes('node_modules')) return 'vendor';
           },
-          entryFileNames: '[name].js',
+          // используем шаблон с безопастным именем и хэшем
+          entryFileNames: '[name].[hash].js',
+          chunkFileNames: 'chunks/[name].[hash].js',
           assetFileNames: 'assets/[name]-[hash][extname]',
         },
       },
@@ -53,7 +56,7 @@ export default defineConfig(({ command }) => {
       injectHTML(),
       FullReload(['./src/**/*.html']),
       viteStaticCopy({
-        targets: [{ src: 'src/img/icons.svg', dest: 'img' }],
+        targets: [{ src: 'img/icons.svg', dest: 'img' }],
       }),
     ],
   };
