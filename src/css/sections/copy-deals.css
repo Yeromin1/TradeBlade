@@ -1,5 +1,15 @@
+.copy-deals .container {
+  position: relative;
+}
+
 .copy-deals__container {
-  padding: 40px 0;
+  padding: 40px 0 61px;
+}
+
+.copy-deals__picture {
+  opacity: 0;
+  animation: show 2s ease forwards;
+  animation-delay: 2s;
 }
 
 .copy-deals__img {
@@ -12,12 +22,18 @@
   letter-spacing: -0.04em;
   color: var(--white);
   margin-bottom: 12px;
+  opacity: 0;
+  animation: show 2s ease forwards;
+  animation-delay: 2.5s;
 }
 
 .copy-deals__text {
   line-height: 1.25;
   color: #e7f7f8;
   margin-bottom: 24px;
+  opacity: 0;
+  animation: show 1.5s ease forwards;
+  animation-delay: 3s;
 }
 
 .copy-deals__form {
@@ -27,6 +43,9 @@
   height: 50px;
   align-items: center;
   margin-bottom: 12px;
+  opacity: 0;
+  animation: show 1.5s ease forwards;
+  animation-delay: 3.5s;
 }
 
 .form__email {
@@ -64,13 +83,35 @@
   line-height: 1.43;
   color: var(--white);
   opacity: 0.3;
+  opacity: 0;
+  animation: show 1.5s ease forwards;
+  animation-delay: 4s;
+}
+
+.copy-deals__bookmark {
+  width: 282px;
+  height: 27px;
+  position: absolute;
+  top: 95%;
+  left: -1%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 1440px) {
   .copy-deals__container {
     display: flex;
     flex-direction: row-reverse;
-    padding: 160px 0 134px;
+    padding: 160px 0 194px;
     gap: 128px;
     justify-content: flex-end;
   }
@@ -95,5 +136,10 @@
 
   .form__btn:hover {
     transform: scale(1.03);
+  }
+
+  .copy-deals__bookmark {
+    width: 650px;
+    top: 92%;
   }
 }

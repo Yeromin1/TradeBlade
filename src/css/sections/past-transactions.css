@@ -1,5 +1,6 @@
 .past-transactions .container {
-  padding: 50px 16px;
+  padding: 50px 16px 100px 16px;
+  position: relative;
 }
 
 .past-transactions__title {
@@ -128,9 +129,17 @@
   opacity: 0.15;
 }
 
+.past-transactions__bookmark {
+  width: 282px;
+  height: 27px;
+  position: absolute;
+  top: 95%;
+  left: -5%;
+}
+
 @media (min-width: 1440px) {
   .past-transactions .container {
-    padding: 96px 80px 143px;
+    padding: 96px 80px 203px;
   }
 
   .past-transactions__title {
@@ -141,5 +150,11 @@
 
   .past-transactions__title-text {
     margin-bottom: 77px;
+  }
+
+  .past-transactions__bookmark {
+    width: 650px;
+    top: 92%;
+    left: -1%;
   }
 }

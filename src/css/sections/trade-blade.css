@@ -2,6 +2,7 @@
   padding: 56px 16px 71px 16px;
   display: grid;
   gap: 40px;
+  position: relative;
 }
 
 .tradeblade__title {
@@ -39,9 +40,17 @@
   opacity: 0.8;
 }
 
+.tradeblade__bookmark {
+  width: 282px;
+  height: 27px;
+  position: absolute;
+  top: 97%;
+  left: 0;
+}
+
 @media (min-width: 1440px) {
   .tradeblade .container {
-    padding: 96px 80px;
+    padding: 96px 80px 156px;
     display: flex;
     gap: 176px;
   }
@@ -69,5 +78,10 @@
   .tradeblade__text {
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  .tradeblade__bookmark {
+    width: 650px;
+    top: 94%;
   }
 }
