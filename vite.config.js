@@ -32,7 +32,7 @@ const getHtmlEntries = () => {
 export default defineConfig(({ command }) => {
   return {
     root: 'src',
-    base: '/tradeblade/', // проверь, точно ли так называется репозиторий в URL (регистр)
+    base: '/TradeBlade/', // проверь, точно ли так называется репозиторий в URL (регистр)
     build: {
       outDir: '../dist',
       emptyOutDir: true,
