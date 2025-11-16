@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="icon" type="image/svg+xml" href="/tradeblade/assets/Logo-DkizcNJ7.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+  rel="stylesheet"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+/>
+
+
+    <title>TradeBlade</title>
+
+
+    <style>
+      .preloader {
+        background: black;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .preloader svg {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: drawText 3s ease forwards;
+        text-transform: uppercase;
+      }
+
+      @keyframes drawText {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/tradeblade/main.CFOAeNZa.js"></script>
+    <link rel="modulepreload" crossorigin href="/tradeblade/chunks/vendor.DKaacsQw.js">
+    <link rel="stylesheet" crossorigin href="/tradeblade/assets/vendor-pvxkJjp9.css">
+    <link rel="stylesheet" crossorigin href="/tradeblade/assets/main-ChlqOTNO.css">
+  </head>
+
+  <body>
+    <div class="preloader">
+      <svg width="250" height="55" xmlns="http://www.w3.org/2000/svg">
+        <text
+          x="10"
+          y="50"
+          font-size="40"
+          font-family="Arial"
+          font-weight="bold"
+          stroke="var(--q)"
+          fill="none"
+          stroke-width="1.5"
+          class="animated-text"
+        >
+          Hello I AM
+        </text>
+      </svg>
+      <svg width="250" height="55" xmlns="http://www.w3.org/2000/svg">
+        <text
+          x="10"
+          y="50"
+          font-size="40"
+          font-family="Arial"
+          font-weight="bold"
+          stroke="var(--q)"
+          fill="none"
+          stroke-width="1.5"
+          class="animated-text"
+        >
+          FullStack
+        </text>
+      </svg>
+      <svg width="260" height="55" xmlns="http://www.w3.org/2000/svg">
+        <text
+          x="10"
+          y="50"
+          font-size="40"
+          font-family="Arial"
+          font-weight="bold"
+          stroke="var(--q)"
+          fill="none"
+          stroke-width="1.5"
+          class="animated-text"
+        >
+          developer
+        </text>
+      </svg>
+    </div>
+
+    <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a href="./index.html" class="header-logo">
+        <svg class="header-icon">
+          <use href="/tradeblade/assets/LogoMob-BUfgB7b4.svg"></use>
+        </svg>
+      </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#numbers">ЦИФРЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#copy-deals">СДЕЛКИ ОНЛАЙН</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about-company">О КОМПАНИИ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#how-use">КАК НАЧАТЬ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#tariffs">ТАРИФЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">ОТЗЫВЫ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__btn">
+          <button type="button" class="btn-login">ВХОД</button>
+          <button type="button" class="btn-register">РЕГИСТРАЦИЯ</button>
+        </div>
+
+      <nav class="menu-nav">
+        <button class="btn-menu" type="button" data-menu-open>
+          <svg Class="menu-icon" width="32" height="32">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+
+      <!----------menu-mobal--is-open----------->
+    <div class="modal-menu-overlay" data-menu>
+      <div class="container container-menu-nav-address">
+        <div class="mtnu__container-btn">
+          <button class="menu-close" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="24" height="24">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-line"></div>
+
+        <div class="mobal__nav-btn">
+          <nav class="menu-mobal-nav">
+            <ul class="mobal__nav-list">
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#numbers" menu-mobal-link>ЦИФРЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#copy-deals" menu-mobal-link>СДЕЛКИ ОНЛАЙН</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#about-company" menu-mobal-link>О КОМПАНИИ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#how-use" menu-mobal-link>КАК НАЧАТЬ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#tariffs" menu-mobal-link>ТАРИФЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#" menu-mobal-link>ОТЗЫВЫ</a>
+              </li>
+              <li class="mobal__nav-item">
+                <a class="mobal__nav-link" href="#" menu-mobal-link>FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="modal-menu__btn">
+            <button type="button"    class="modal-menu__btn-register">РЕГИСТРАЦИЯ</button>
+            <button type="button" class="modal-menu__btn-login">ВХОД</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="copy-deals" id="copy-deals">
+  <div class="container">
+    <div class="copy-deals__container">
+      <div class="copy-deals__picture">
+        <picture>
+          <source
+            media="(max-width:1439px)"
+            srcset="data:image/png;base64,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 1x, /tradeblade/assets/ETH2x-ifd-7Ptq.png 2x"
+          />
+          <source
+            media="(min-width:1440px)"
+            srcset="/tradeblade/assets/ETH1x-BrMxWOMA.png 1x, /tradeblade/assets/ETH2x-zbIJYc8E.png 2x"
+          />
+          <img
+            class="copy-deals__img"
+            src="/tradeblade/assets/ETH2x-ifd-7Ptq.png"
+            alt="ETH/USDT photo"
+          />
+        </picture>
+      </div>
+
+      <div class="copy-deals__title-form">
+        <h1 class="copy-deals__title">
+          МОМЕНТАЛЬНО КОПИРУЙ СДЕЛКИ ПРОФИ ТРЕЙДЕРОВ
+        </h1>
+        <p class="copy-deals__text">
+          Начни копировать сделки с успешной командой профессиональных трейдеров
+          в автоматическом режиме.
+        </p>
+
+        <form class="copy-deals__form">
+          <input
+            class="form__email"
+            type="email"
+            name="form-email"
+            placeholder="ВАШ E-MAIL"
+            autocomplete="off"
+          />
+
+          <button class="form__btn" type="submit">
+            <span class="form__btn-start">НАЧАТЬ</span>
+          </button>
+        </form>
+
+        <p class="copy-deals__info">5 дней бесплатного пользования</p>
+      </div>
+    </div>
+
+    <div class="copy-deals__bookmark">
+      <picture>
+        <source
+          media="(max-width:1439px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAABSCAMAAAB0fQHrAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAQO8Qv9+AIJ+PXM+vwHAw0nA6ggAAAQ1JREFUeNrt3EtuhDAUBdE88Afozmf/q02khLoeZtyqWsLRFcIe+O3rxXsc9fbPXt7ip2NqQX1qQX3Xgg4tUmlBTYtUWlDTIpUW1LVIlxa07VrQ0GIZhhY0tFiGoQWdWqSpBT21SKUFNS1SaUFNi1RaUNciXVrQtmtBQ4tlGFrQ0GIZhhZ0apGmFvTUIpUW1LRIpQU1LVJpQV2LdGlB264FDS2WYWhBQ4tlGFrQqUWaWlDTIpUW1LRIpQU1LVJpQV2L9KEFbbsWNLRYhqEFDS2WYWhBpxZpakFNi1RaUNMilRbUtEilBR1aUNciaaEFpYcWfjspXVrcdf+17rapxU3x6dnsr3fvcn7r92un3/8D/Uq1RYN6AAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhUAAACkBAMAAADSw8G0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAQBDvv9+AII9gn69wz1BWXuxoAAAB+UlEQVR42u3av63WMBRA8TdCRsgMnsAllKRBosoIGQExQUYIFe03Ah1rIDawHBvz5xMgQc7t0NMrn85vhFP5+t6HX89bffHl4bGee4s/3tsifLBF+GgLDFuEwxbotgifbYFkC3RbhM0WOGyBYguctgiTLZBtgWIL3G0RdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+CwBYotcNoiTLZAtgWKLdBsEXZbYLEFui1QZ1tgtQWSLTBsETZb4LAFii1w2iJMtkC2BYot0GwRdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLIFui1QZ1tgtQWSLTBsETZb4GYLFFvgtEWYbIFsCxRboNki7LZAsgW6LVBnW2C1BZItMGwRNlvgZgsUW+C0RZhsgWwLFFug2SLstkCyBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLYFvtoCP22B77ZAswWqLYItbGGL/7rbAj9s4VvLN7izmTO7fzlP980WeGuLS5ttcXntruhyd7eMd94cXF55r3V56X3nX/XNp38pfgNxX0qEeoVcJAAAAABJRU5ErkJggg== 2x"
+        />
+        <source
+          media="(min-width:1440px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAn8AAAA8BAMAAADlM8EjAAAAGFBMVEUAAAD///////////////////////////8jfp1fAAAAB3RSTlMAf+e/cGAgepczcAAAALFJREFUeNrt0DEBgwAAxEAkvIcaqQp8hAX7OIAha07CHXde/c7jVYFfrn+BDgVKK9ChQGkFOhQorUCHAqUV6FCgtAIdCpRWoEOB0gp0KFBagQ4FSivQoUBpBToUKK1AhwKlFehQoLQCHQqUVqBDgdIKdChQWoEOBUor0KFAaQU6FCitQIcCpRXoUKC0Ah0KlFagQ4HSCnQoUFqBDgVKK9ChQGkFOhQorUCHAqUV6FCgtAeHAi+KjVwg+QAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABP4AAAB4BAMAAACQiCElAAAAFVBMVEUAAAD///////////////////////9Iz20EAAAABnRSTlMAf2vXtyDhLzuPAAABvklEQVR42uzUUW0dQQAEQUMYCMESBKYwcbT8IRjD6p0091GFodVfBz7w8/f76wP640P//+iPoZ9v/TH0T38sRX8MVX/ceM8AD3ys+uPGawZ44HPVHzfeMsADD6j+uPGSAR54QvXHjXcM8MAjqj9uvGKAB55R/XHjDQM88JDqjxsvGOCBp1R/3NgP8MBjqj9uzAd44DnVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vR32+7dCwAAAADQUyhiu8vUYxbEoYQmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6H5R+n8IzT/KJ1/hOYfpfOP0PyjdP4Rmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6E9YsDGsonIdKwAAAAASUVORK5CYII= 2x"
+        />
+        <img
+          class="copy-deals__bookmark-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhUAAACkBAMAAADSw8G0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAQBDvv9+AII9gn69wz1BWXuxoAAAB+UlEQVR42u3av63WMBRA8TdCRsgMnsAllKRBosoIGQExQUYIFe03Ah1rIDawHBvz5xMgQc7t0NMrn85vhFP5+t6HX89bffHl4bGee4s/3tsifLBF+GgLDFuEwxbotgifbYFkC3RbhM0WOGyBYguctgiTLZBtgWIL3G0RdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+CwBYotcNoiTLZAtgWKLdBsEXZbYLEFui1QZ1tgtQWSLTBsETZb4LAFii1w2iJMtkC2BYot0GwRdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLIFui1QZ1tgtQWSLTBsETZb4GYLFFvgtEWYbIFsCxRboNki7LZAsgW6LVBnW2C1BZItMGwRNlvgZgsUW+C0RZhsgWwLFFug2SLstkCyBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLYFvtoCP22B77ZAswWqLYItbGGL/7rbAj9s4VvLN7izmTO7fzlP980WeGuLS5ttcXntruhyd7eMd94cXF55r3V56X3nX/XNp38pfgNxX0qEeoVcJAAAAABJRU5ErkJggg=="
+          alt="bookmark"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="numbers" id="numbers">
+  <div class="container">
+    <div class="numbers__container-title-text">
+      <h2 class="numbers__title">ЦИФРЫ</h2>
+      <p class="numbers__title-text">Cентябрь 2022</p>
+    </div>
+
+    <ul class="numbers__list">
+      <li class="numbers__item">
+        Торговой прибыли <span class="numbers__item-span">2756%</span>
+      </li>
+      <li class="numbers__item width">
+        фьючерсных и спотовых сделок
+        <span class="numbers__item-span">67</span>
+      </li>
+      <li class="numbers__item">
+        прибыль подписчиков <span class="numbers__item-span">375000</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="past-transactions">
+  <div class="container">
+    <h2 class="past-transactions__title">Прошедшие сделки</h2>
+    <p class="past-transactions__title-text">Онлайн</p>
+
+    <ul class="past-transactions__list">
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              BTC/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">6.02%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 3</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              ETH/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">16.3%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">0.963%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+
+      <li class="past-transactions__item">
+        <div class="past-transactions__container">
+          <div>
+            <p class="past-transactions__item-NEAR-USDT">
+              NEAR/USDT
+              <span class="text__NEAR-USDT">SPOT · 1 мин. назад</span>
+            </p>
+            <p class="past-transactions__item-profit">
+              Прибыль
+              <div class="past-transactions__container-icon-profit">
+                <span class="text__profit">58.6206%</span>
+                <svg class="past-transactions__icon">
+                    <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arrow-thin-up"></use>
+                  </svg>
+              </div>
+            </p>
+          </div>
+          <div class="past-transactions__container-icon-logo">
+            <svg class="past-transactions__icons-logo">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-logo-Profit"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="past-transactions__item-target">
+          <span>Цель 4</span>
+          <span class="text__target">Дата входа 06.10.2022</span>
+        </p>
+      </li>
+    </ul>
+
+        <div class="past-transactions__bookmark">
+      <picture>
+        <source
+          media="(max-width:1439px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAABSCAMAAAB0fQHrAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAQO8Qv9+AIJ+PXM+vwHAw0nA6ggAAAQ1JREFUeNrt3EtuhDAUBdE88Afozmf/q02khLoeZtyqWsLRFcIe+O3rxXsc9fbPXt7ip2NqQX1qQX3Xgg4tUmlBTYtUWlDTIpUW1LVIlxa07VrQ0GIZhhY0tFiGoQWdWqSpBT21SKUFNS1SaUFNi1RaUNciXVrQtmtBQ4tlGFrQ0GIZhhZ0apGmFvTUIpUW1LRIpQU1LVJpQV2LdGlB264FDS2WYWhBQ4tlGFrQqUWaWlDTIpUW1LRIpQU1LVJpQV2L9KEFbbsWNLRYhqEFDS2WYWhBpxZpakFNi1RaUNMilRbUtEilBR1aUNciaaEFpYcWfjspXVrcdf+17rapxU3x6dnsr3fvcn7r92un3/8D/Uq1RYN6AAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhUAAACkBAMAAADSw8G0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAQBDvv9+AII9gn69wz1BWXuxoAAAB+UlEQVR42u3av63WMBRA8TdCRsgMnsAllKRBosoIGQExQUYIFe03Ah1rIDawHBvz5xMgQc7t0NMrn85vhFP5+t6HX89bffHl4bGee4s/3tsifLBF+GgLDFuEwxbotgifbYFkC3RbhM0WOGyBYguctgiTLZBtgWIL3G0RdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+CwBYotcNoiTLZAtgWKLdBsEXZbYLEFui1QZ1tgtQWSLTBsETZb4LAFii1w2iJMtkC2BYot0GwRdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLIFui1QZ1tgtQWSLTBsETZb4GYLFFvgtEWYbIFsCxRboNki7LZAsgW6LVBnW2C1BZItMGwRNlvgZgsUW+C0RZhsgWwLFFug2SLstkCyBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLYFvtoCP22B77ZAswWqLYItbGGL/7rbAj9s4VvLN7izmTO7fzlP980WeGuLS5ttcXntruhyd7eMd94cXF55r3V56X3nX/XNp38pfgNxX0qEeoVcJAAAAABJRU5ErkJggg== 2x"
+        />
+        <source
+          media="(min-width:1440px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAn8AAAA8BAMAAADlM8EjAAAAGFBMVEUAAAD///////////////////////////8jfp1fAAAAB3RSTlMAf+e/cGAgepczcAAAALFJREFUeNrt0DEBgwAAxEAkvIcaqQp8hAX7OIAha07CHXde/c7jVYFfrn+BDgVKK9ChQGkFOhQorUCHAqUV6FCgtAIdCpRWoEOB0gp0KFBagQ4FSivQoUBpBToUKK1AhwKlFehQoLQCHQqUVqBDgdIKdChQWoEOBUor0KFAaQU6FCitQIcCpRXoUKC0Ah0KlFagQ4HSCnQoUFqBDgVKK9ChQGkFOhQorUCHAqUV6FCgtAeHAi+KjVwg+QAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABP4AAAB4BAMAAACQiCElAAAAFVBMVEUAAAD///////////////////////9Iz20EAAAABnRSTlMAf2vXtyDhLzuPAAABvklEQVR42uzUUW0dQQAEQUMYCMESBKYwcbT8IRjD6p0091GFodVfBz7w8/f76wP640P//+iPoZ9v/TH0T38sRX8MVX/ceM8AD3ys+uPGawZ44HPVHzfeMsADD6j+uPGSAR54QvXHjXcM8MAjqj9uvGKAB55R/XHjDQM88JDqjxsvGOCBp1R/3NgP8MBjqj9uzAd44DnVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vR32+7dCwAAAADQUyhiu8vUYxbEoYQmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6H5R+n8IzT/KJ1/hOYfpfOP0PyjdP4Rmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6E9YsDGsonIdKwAAAAASUVORK5CYII= 2x"
+        />
+        <img
+          class="past-transactions__bookmark-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhUAAACkBAMAAADSw8G0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAQBDvv9+AII9gn69wz1BWXuxoAAAB+UlEQVR42u3av63WMBRA8TdCRsgMnsAllKRBosoIGQExQUYIFe03Ah1rIDawHBvz5xMgQc7t0NMrn85vhFP5+t6HX89bffHl4bGee4s/3tsifLBF+GgLDFuEwxbotgifbYFkC3RbhM0WOGyBYguctgiTLZBtgWIL3G0RdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+CwBYotcNoiTLZAtgWKLdBsEXZbYLEFui1QZ1tgtQWSLTBsETZb4LAFii1w2iJMtkC2BYot0GwRdltgsQW6LVBnW2C1BZItMGwRNlvgsAWKLXDaIky2QLYFii3QbBF2W2CxBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLIFui1QZ1tgtQWSLTBsETZb4GYLFFvgtEWYbIFsCxRboNki7LZAsgW6LVBnW2C1BZItMGwRNlvgZgsUW+C0RZhsgWwLFFug2SLstkCyBbotUGdbYLUFki0wbBE2W+BmCxRb4LRFmGyBbAsUW6DZIuy2QLYFvtoCP22B77ZAswWqLYItbGGL/7rbAj9s4VvLN7izmTO7fzlP980WeGuLS5ttcXntruhyd7eMd94cXF55r3V56X3nX/XNp38pfgNxX0qEeoVcJAAAAABJRU5ErkJggg=="
+          alt="bookmark"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <div class="container__about-company-free">
+        <section class="about-company" id="about-company">
+  <div class="container">
+    <h2 class="about-company__title">О компании</h2>
+    <p class="about-company-text">
+      Мы опытная команда, для которой трейдинг – профессия. TradeBlade является
+      авторизованным официальным брокером биржи Binance.
+    </p>
+    <p class="about-company-text">
+      Он представляет пользователям множество преимуществ, таких как более
+      високая скорость синхронизации API и возможность создать учетную запись
+      Binance через платформу TradeBlade всего в 1 клик.
+    </p>
+  </div>
+</section>
+
+        <section class="free">
+  <div class="container">
+    <div class="free__container">
+      <h3 class="free__title">
+        Попробуйте сейчас и получите 5 дней бесплатного пользования
+      </h3>
+
+      <div class="free__container-form-btn">
+        <form class="free__form">
+          <input
+            class="free__form-email"
+            type="email"
+            name="form-email"
+            placeholder="ВАШ E-MAIL"
+            autocomplete="off"
+          />
+          <button class="free__form-btn" type="submit">
+            <span class="free__span-btn">попробовать</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <section class="tradeblade">
+  <div class="container">
+    <h2 class="tradeblade__title">tradeblade это</h2>
+    <ul class="tradeblade__list">
+      <li class="tradeblade__item">
+        <div class="tradeblade__item-icon">
+          <svg class="tradeblade__icon" width="56" height="56">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-trading"></use>
+          </svg>
+        </div>
+        <div class="tradeblade__item-title-text">
+          <h3 class="tradeblade__item-title">Копи–трейдинг 24/7</h3>
+          <p class="tradeblade__text">
+            Copy–Trading позволяет следить за сделками команды и получать
+            прибыль 24/7 без каких–либо усилий или проблем для вас.
+          </p>
+        </div>
+      </li>
+
+      <li class="tradeblade__item">
+        <div class="tradeblade__item-icon">
+          <svg class="tradeblade__icon" width="56" height="56">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-trading2"></use>
+          </svg>
+        </div>
+        <div class="tradeblade__item-title-text">
+          <h3 class="tradeblade__item-title">
+            Торговля спотовыми и фьючерсными сделками
+          </h3>
+          <p class="tradeblade__text">
+            Платформа для копи–трейдинга поддерживает торговлю как спотовыми,
+            так и фьючерсными сделками на Binance.
+          </p>
+        </div>
+      </li>
+
+      <li class="tradeblade__item">
+        <div class="tradeblade__item-icon">
+          <svg class="tradeblade__icon" width="56" height="56">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-trading3"></use>
+          </svg>
+        </div>
+        <div class="tradeblade__item-title-text">
+          <h3 class="tradeblade__item-title">Высокая прибыль каждий день</h3>
+          <p class="tradeblade__text">
+            Каждая сделка показывает хорошие результаты на рынках за счет
+            хорошего денежного и риск менеджмента.
+          </p>
+        </div>
+      </li>
+
+      <li class="tradeblade__item">
+        <div class="tradeblade__item-icon">
+          <svg class="tradeblade__icon" width="56" height="56">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-trading4"></use>
+          </svg>
+        </div>
+        <div class="tradeblade__item-title-text">
+          <h3 class="tradeblade__item-title">Собственный курс по трейдингу</h3>
+          <p class="tradeblade__text">
+            Мы хотим менять комьюнити, улучшать его. В личном кабинете на сайте
+            вы найдете наш собственный курс по криптовалютам, который поможет
+            увереннее понимать наши сигналы и разрабатывать свои.
+          </p>
+        </div>
+      </li>
+
+      <li class="tradeblade__item">
+        <div class="tradeblade__item-icon">
+          <svg class="tradeblade__icon" width="56" height="56">
+            <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-trading5"></use>
+          </svg>
+        </div>
+        <div class="tradeblade__item-title-text">
+          <h3 class="tradeblade__item-title">Сильное окружение</h3>
+          <p class="tradeblade__text">
+            Ты попадаешь в сильное крипто окружение, ведь развиваться легче
+            когда нас много. В чате присутствуют люди из нашей команды, которые
+            общаються со всеми, помагают и подсказывают.
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="tradeblade__bookmark">
+      <picture>
+        <source
+          media="(max-width:1439px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARoAAABSCAMAAAC8Ees9AAAANlBMVEUAAABoVP9qVP9wUP9pVP9pU/9qU/9qVP9oUP9pVP9nUv9qVP9pVf9qU/9rU/9qVP9lVf9qVP/H42rvAAAAEXRSTlMAQO8Qv9+fgCCPZM+vUNDAMB88zssAAAEaSURBVHja7dxBbsJAEAVRPnTPjA0k8f0vm0UUiQUlwZqqIzx9WW4vfMro44O6jpxe7fi4xpKG6iUN1RdpqCENFmmokgaLNFRJg0UaqqXBdmmo80UaakrDs5GGmtLwbKShNmmwJQ11kwaLNFRJg0UaqqTBIg3V0mC7NHwuSENNaXg20lBTGp6NNNQmDbakoW7SYJGGKmmwSEOVNFikoVoabJeGzwVpqCkNz0YaakrDs5GG2qTBljRUSYNFGqqkwSINVdJgkYZqabBdGj4XpKGmNDwbaagpDc9GGmqTBlvSUCUNFmmokgaLNFRJg0UaakhDtTSYNNK83VUaH8Nvd5cGal/5oPOSBmR+PC+f9/33Kes+vg57qP9/1vwL4Maehhn79jAAAAAASUVORK5CYII= 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjMAAACkCAMAAABVcF8iAAAANlBMVEUAAABoVP9wUP9qVP9pVP9pU/9qVP9oUP9oUv9pVP9qU/9pVP9oVP9qVP9rU/9qVP9pU/9qVP9+EdWuAAAAEXRSTlMAQBDvv9+AIGCPn7Bwz9DAUEkaX94AAAJ7SURBVHja7NnJbSQxAATBYYtkH9ICGv+dXRsS0GsQYUOiPvV6vc6fZ329+UBf8/49Xn/umm8+2jNef+zNx3tOzVD9aIbq1gzVoxmqrRmqX80QfR2aIdqaoTo1Q/RohmpohmhqhmpohmhqhmpohuifZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0TfmqEamiGamqEamiGamqEamiFamqG6NEN+EDRDtDVDHhrNEG3NkIdGM0S3ZqhOzRB9a4ZqaIZoaoZqaIZoaoZqaIZoaeZ/O3eM2zAMRFFQJEWRsmQbvv9l0wVJICD4lZqZM7yKu0tSUzOEWtUMoU0zhFrVDKFNM4Ra1QyhXTOkhmYIHZohVTRDaNUMqaIZQqtmSBXNEOqaITU1Q6hVzRDaNEOoVc0Q2jRDqFXNENo1Q2pohtChGVJFM4RWzZAqmiG0aoZU0QyhrhlSUzOEVs2QGpohdGqG0EMzhLpmCDXNkNIMmuEPzXC3p2YIHZrBmx6XzA64zduMErsQXLFzxX2mZsjsdsjJ9KoZIn24iSPydONPZvf/DJFelm/z9YF/vOfyyziPV/vApdYf51h++gKzm33VLQZ9/QAAAABJRU5ErkJggg== 2x"
+        />
+        <source
+          media="(min-width:1440px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAn8AAAA8BAMAAADlM8EjAAAAFVBMVEUAAABoVP9pU/9nU/9pVP9oUP9qVP/fUqBmAAAABnRSTlMAf+dovyBAewEpAAAAsklEQVR42u3QMQGDAADEQCS8iArogqAw4F8CDmDImpNwx51Xv/N4VeCX61+gQ4HSCnQoUFqBDgVKK9ChQGkFOhQorUCHAqUV6FCgtAIdCpRWoEOB0gp0KFBagQ4FSivQoUBpBToUKK1AhwKlFehQoLQCHQqUVqBDgdIKdChQWoEOBUor0KFAaQU6FCitQIcCpRXoUKC0Ah0KlFagQ4HSCnQoUFqBDgVKK9ChQGkFOhQo7QFY23IRMHO1gAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABP4AAAB4BAMAAACQiCElAAAAFVBMVEUAAABoVP9oU/9pU/9pVP9oUP9qVP+PmKiQAAAABnRSTlMAf2vXtyDhLzuPAAABvklEQVR42uzUUW0dQQAEQUMYCMESBKYwcbT8IRjD6p0091GFodVfBz7w8/f76wP640P//+iPoZ9v/TH0T38sRX8MVX/ceM8AD3ys+uPGawZ44HPVHzfeMsADD6j+uPGSAR54QvXHjXcM8MAjqj9uvGKAB55R/XHjDQM88JDqjxsvGOCBp1R/3NgP8MBjqj9uzAd44DnVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vRH0PVH0vR32+7dCwAAAADQUyhiu8vUYxbEoYQmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6H5R+n8IzT/KJ1/hOYfpfOP0PyjdP4Rmn+Uzj9C84/S+Udo/lE6/wjNP0rnH6E9YsDGsonIdKwAAAAASUVORK5CYII= 2x"
+        />
+        <img
+          class="tradeblade__bookmark-img"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjMAAACkCAMAAABVcF8iAAAANlBMVEUAAABoVP9wUP9qVP9pVP9pU/9qVP9oUP9oUv9pVP9qU/9pVP9oVP9qVP9rU/9qVP9pU/9qVP9+EdWuAAAAEXRSTlMAQBDvv9+AIGCPn7Bwz9DAUEkaX94AAAJ7SURBVHja7NnJbSQxAATBYYtkH9ICGv+dXRsS0GsQYUOiPvV6vc6fZ329+UBf8/49Xn/umm8+2jNef+zNx3tOzVD9aIbq1gzVoxmqrRmqX80QfR2aIdqaoTo1Q/RohmpohmhqhmpohmhqhmpohuifZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0SPZqiGZoimZqiGZoimZqiGZoiWZqguzRCtQzNEWzPkq1IzRFsz5KHRDNGtGapTM0TfmqEamiGamqEamiGamqEamiFamqG6NEN+EDRDtDVDHhrNEG3NkIdGM0S3ZqhOzRB9a4ZqaIZoaoZqaIZoaoZqaIZoaeZ/O3eM2zAMRFFQJEWRsmQbvv9l0wVJICD4lZqZM7yKu0tSUzOEWtUMoU0zhFrVDKFNM4Ra1QyhXTOkhmYIHZohVTRDaNUMqaIZQqtmSBXNEOqaITU1Q6hVzRDaNEOoVc0Q2jRDqFXNENo1Q2pohtChGVJFM4RWzZAqmiG0aoZU0QyhrhlSUzOEVs2QGpohdGqG0EMzhLpmCDXNkNIMmuEPzXC3p2YIHZrBmx6XzA64zduMErsQXLFzxX2mZsjsdsjJ9KoZIn24iSPydONPZvf/DJFelm/z9YF/vOfyyziPV/vApdYf51h++gKzm33VLQZ9/QAAAABJRU5ErkJggg=="
+          alt="bookmark"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="how-use" id="how-use">
+  <div class="container">
+    <h2 class="how-use__title">Как начать пользоваться сервисом</h2>
+
+    <ul class="how-use__list">
+      <li class="how-use__item">
+        <h3 class="how-use__item-title">Создайте аккаунт</h3>
+        <p class="how-use__text">
+          Начните бесплатную 3-дневную пробную версию. Кредитная карта не
+          требуется.
+        </p>
+      </li>
+
+      <li class="how-use__item">
+        <h3 class="how-use__item-title">Подключить обмен API ключами</h3>
+        <p class="how-use__text">
+          Просто вставьте свои ключи API из личного кабинета.
+        </p>
+      </li>
+
+      <li class="how-use__item">
+        <h3 class="how-use__item-title">Настройте аккаунт</h3>
+        <p class="how-use__text">
+          Поставьте нужные настройки депозита на каждый сигнал и нажмите
+          сохранить.
+        </p>
+      </li>
+
+      <li class="how-use__item">
+        <h3 class="how-use__item-title">Ваш копитрейдер запущен</h3>
+        <p class="how-use__text">
+          Просто расслабьтесь и начните получать пассивный доход от криптовалюты
+          с помощью TradeBlade
+        </p>
+      </li>
+    </ul>
+
+    <div class="how-use__btn">
+      <a class="how-use__link" href="#">Попробовать бесплатно</a>
+    </div>
+  </div>
+</section>
+
+      <section class="tariffs" id="tariffs">
+  <div class="container">
+    <h2 class="tariffs__title">Тарифы</h2>
+    <div class="tariffs__container-btn">
+      <button type="button" class="tariffs__btn-spot">СПОТ</button>
+      <button type="button" class="tariffs__btn-futures">фьючерс</button>
+    </div>
+    <div class="tariffs__container-card">
+      <div class="tariffs__card">
+        <h4 class="tariffs__card-title">STANDART</h4>
+        <ul class="tariffs__card-list tariffs__card-list-standart">
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Ручной трейдинг</p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">
+              Автоматическое или полуавтоматическое копирование сделок
+            </p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Личный кабинет со статистикой</p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">
+              Среднесрочные сделки с уровнями набора портфеля
+            </p>
+          </li>
+        </ul>
+
+        <div class="tariffs__containe-price-discount-selected">
+          <div class="tariffs__container-price-discount">
+            <p class="tariffs__card-price">$234</p>
+            <p class="tariffs__card-discount">-35%</p>
+          </div>
+
+          <div
+            class="tariffs__container-selected"
+            id="tariffs__container-selected-standart"
+          >
+            <div
+              class="tariffs__container-selected-close"
+              id="tariffs__selected-id-standart"
+            >
+              <p class="tariffs__container-selected-text">12 месяцев</p>
+              <svg
+                class="tariffs__selected-icon-arr-down"
+                width="14"
+                height="8"
+              >
+                <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arr-down"></use>
+              </svg>
+            </div>
+
+            <ul
+              class="tariffs__container-selected-list"
+              id="tariffs__container-selected-list-id-standart"
+            >
+              <li class="tariffs__container-selected-item">3 месяцев</li>
+              <li class="tariffs__container-selected-item">6 месяцев</li>
+              <li class="tariffs__container-selected-item">12 месяцев</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tariffs__card-biv-link">
+          <a class="tariffs__card-link" href="#"
+            ><span>ПОПРОБОВАТЬ</span>
+            <span class="tariffs__card-link-span">5 дней бесплатн</span></a
+          >
+        </div>
+      </div>
+
+      <div class="tariffs__card" id="tariffs__card-vip">
+        <h4 class="tariffs__card-title">VIP</h4>
+        <ul class="tariffs__card-list">
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Ручной трейдинг</p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">
+              Автоматическое или полуавтоматическое копирование сделок
+            </p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Личный кабинет со статистикой</p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">
+              Краткосрочные, среднесрочные и инвест сделки
+            </p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Доступ в Vip чат с командой</p>
+          </li>
+
+          <li class="tariffs__card-item">
+            <svg class="tariffs__card-icon" width="12" height="12">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-checkmark"></use>
+            </svg>
+            <p class="tariffs__card-text">Наш авторский курс по трейдингу</p>
+          </li>
+        </ul>
+
+        <div class="tariffs__containe-price-discount-selected">
+          <div class="tariffs__container-price-discount">
+            <p class="tariffs__card-price">$585</p>
+            <p class="tariffs__card-discount">-35%</p>
+          </div>
+
+          <div
+            class="tariffs__container-selected"
+            id="tariffs__container-selected-vip"
+          >
+            <div
+              class="tariffs__container-selected-close"
+              id="tariffs__selected-id-vip"
+            >
+              <p class="tariffs__container-selected-text">12 месяцев</p>
+              <svg
+                class="tariffs__selected-icon-arr-down"
+                width="14"
+                height="8"
+              >
+                <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arr-down"></use>
+              </svg>
+            </div>
+
+            <ul
+              class="tariffs__container-selected-list"
+              id="tariffs__container-selected-list-id-vip"
+            >
+              <li class="tariffs__container-selected-item">3 месяцев</li>
+              <li class="tariffs__container-selected-item">6 месяцев</li>
+              <li class="tariffs__container-selected-item">12 месяцев</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tariffs__card-biv-link">
+          <a class="tariffs__card-link" href="#"
+            ><span>ПОПРОБОВАТЬ</span>
+            <span class="tariffs__card-link-span">5 дней бесплатн</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="questions">
+  <div class="container">
+    <h2 class="questions__title">часто задаваемые вопросы</h2>
+    <ul class="acc-container">
+      <li class="ac">
+        <h5 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Что такое TradeBlade
+            <svg class="icon-close" width="14" height="8">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arr-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <div class="ac-panel">
+          <p class="text-acc">
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+          </p>
+          <p class="text-acc">
+            Он представляет пользователям множество преимуществ, таких как более
+            високая скорость синхронизации API и возможность создать учетную
+            запись Binance через платформу TradeBlade всего в 1 клик.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac">
+        <h5 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Что TradeBlade предлагает инвесторам
+            <svg class="icon-close" width="14" height="8">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arr-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <div class="ac-panel">
+          <p class="text-acc">
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac">
+        <h5 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Должен ли я перевести свои средства на TradeBlade
+            <svg class="icon-close" width="14" height="8">
+              <use href="/tradeblade/assets/icons-BDs1USQQ.svg#icon-arr-down"></use>
+            </svg>
+          </button>
+        </h5>
+        <div class="ac-panel">
+          <p class="text-acc">
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container-title-nav">
+      <h4 class="footer__title">Быстрая навигация</h4>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#numbers">ЦИФРЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#copy-deals">СДЕЛКИ ОНЛАЙН</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#about-company">О КОМПАНИИ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#how-use">КАК НАЧАТЬ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#tariffs">ТАРИФЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">ОТЗЫВЫ</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__container-logo-text">
+      <a href="./index.html" class="footer__icon-link">
+        <svg class="footer__icon">
+          <use href="/tradeblade/assets/LogoDes-DANlnIuF.svg"></use>
+        </svg>
+      </a>
+      <p class="footer__text">© 2022 TradeBlade. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  setTimeout(() => {
+    const loader = document.querySelector('.loader');
+    const preloader = document.querySelector('.preloader');
+
+    if (loader) {
+      loader.style.transition = 'opacity 0.5s ease';
+      loader.style.opacity = 0;
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+
+    if (preloader) {
+      preloader.style.transition = 'opacity 0.5s ease';
+      preloader.style.opacity = 0;
+
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    }
+  }, 2000);
+</script>
+
+
+  </body>
+</html>
