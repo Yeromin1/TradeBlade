@@ -1,4 +1,3 @@
-
 .free .container {
   background: linear-gradient(
     to bottom,
@@ -56,11 +55,7 @@
   text-transform: uppercase;
 }
 
-
-
 @media (min-width: 1440px) {
-
-
   .free .container {
     padding: 0;
     min-width: 631px;
@@ -79,8 +74,6 @@
     width: 469px;
     margin: 0 auto 32px;
   }
-
-
 
   .free__form {
     display: flex;
@@ -103,11 +96,10 @@
     height: 52px;
     position: absolute;
     right: 0%;
+    color: #030718;
   }
 
   .free__form-btn:hover {
     transform: scale(1.03);
   }
-
-
 }
