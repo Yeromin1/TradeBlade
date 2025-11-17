@@ -1,5 +1,4 @@
-.free {
-}
+
 .free .container {
   background: linear-gradient(
     to bottom,
@@ -57,12 +56,10 @@
   text-transform: uppercase;
 }
 
-.free__span-btn {
-}
+
 
 @media (min-width: 1440px) {
-  .free {
-  }
+
 
   .free .container {
     padding: 0;
@@ -83,8 +80,7 @@
     margin: 0 auto 32px;
   }
 
-  .free__container-form-btn {
-  }
+
 
   .free__form {
     display: flex;
@@ -113,6 +109,5 @@
     transform: scale(1.03);
   }
 
-  .free__span-btn {
-  }
+
 }

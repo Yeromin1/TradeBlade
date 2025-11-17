@@ -17,10 +17,9 @@ const getHtmlEntries = () => {
       if (fs.statSync(fullPath).isDirectory()) {
         walk(fullPath);
       } else if (file.endsWith('.html')) {
-        // безопасно получить путь относительно pagesDir и стабилизировать разделители
         const rel = relative(pagesDir, fullPath).replace(/\\/g, '/'); // windows -> posix
         const name = rel.replace('.html', '').replace(/\//g, '-');
-        entries[name] = fullPath; // значение — абсолютный путь корректен для rollup input
+        entries[name] = fullPath;
       }
     });
   };
@@ -32,7 +31,7 @@ const getHtmlEntries = () => {
 export default defineConfig(({ command }) => {
   return {
     root: 'src',
-    base: '/TradeBlade/', // проверь, точно ли так называется репозиторий в URL (регистр)
+    base: '/TradeBlade/',
     build: {
       outDir: '../dist',
       emptyOutDir: true,
@@ -45,7 +44,6 @@ export default defineConfig(({ command }) => {
           manualChunks(id) {
             if (id.includes('node_modules')) return 'vendor';
           },
-          // используем шаблон с безопастным именем и хэшем
           entryFileNames: '[name].[hash].js',
           chunkFileNames: 'chunks/[name].[hash].js',
           assetFileNames: 'assets/[name]-[hash][extname]',

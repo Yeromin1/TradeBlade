@@ -4,9 +4,6 @@
   align-items: center;
   height: 52px;
 }
-
-.header-logo {
-}
 .header-icon {
   width: 107px;
   height: 52px;
@@ -20,9 +17,6 @@
 .btn-menu {
   fill: var(--white);
   padding: 10px 0;
-}
-
-.menu-icon {
 }
 
 /* Стили для модального окна */
@@ -60,14 +54,8 @@
   height: 100%;
 }
 
-.modal-menu-overlay {
-}
-
 .modal-menu-overlay .container {
   padding: 16px 16px;
-}
-
-.container-menu-nav-address {
 }
 
 .mtnu__container-btn {
@@ -75,14 +63,8 @@
   justify-content: flex-end;
 }
 
-.menu-close {
-}
-
 .menu-close-icon {
   fill: var(--white);
-}
-
-.menu-line {
 }
 
 .mobal__nav-btn {
@@ -94,15 +76,9 @@
   padding-bottom: 24px;
 }
 
-.menu-mobal-nav {
-}
-
 .mobal__nav-list {
   display: grid;
   gap: 32px;
-}
-
-.mobal__nav-item {
 }
 
 .mobal__nav-link {
