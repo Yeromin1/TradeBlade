@@ -44,6 +44,7 @@
   box-shadow: 0 0 4px 0 var(--q);
   background-color: var(--q);
   width: 343px;
+  height: 52px;
 }
 
 .how-use__link {
