@@ -41,9 +41,6 @@
 
 .how-use__btn {
   border-radius: 3px;
-
-  width: 343px;
-  height: 52px;
   box-shadow: 0 0 4px 0 var(--q);
   background-color: var(--q);
 }
