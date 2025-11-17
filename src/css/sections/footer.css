@@ -35,6 +35,11 @@
   padding: 0 16px;
 }
 
+.footer__icon {
+  width: 107px;
+  height: 52px;
+}
+
 .footer__text {
   font-size: 14px;
   line-height: 143%;
