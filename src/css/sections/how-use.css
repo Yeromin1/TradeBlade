@@ -39,20 +39,17 @@
   width: 297px;
 }
 
-.how-use__btn {
-  border-radius: 3px;
-  box-shadow: 0 0 4px 0 var(--q);
-  background-color: var(--q);
-  width: 343px;
-  height: 52px;
-}
-
 .how-use__link {
   font-weight: 500;
   line-height: 1.25;
   text-transform: uppercase;
   padding: 16px 64px;
   display: grid;
+  width: 343px;
+  height: 52px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 var(--q);
+  background-color: var(--q);
 }
 
 @media (min-width: 1440px) {
