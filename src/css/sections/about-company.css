@@ -18,9 +18,9 @@
 }
 
 .about-company-text {
-  line-height: 1.25;
+  font-weight: 400;
   opacity: 0.8;
-  width: 340px;
+  width: 339px;
   color: var(--black-blue);
 }
 

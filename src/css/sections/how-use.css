@@ -8,7 +8,6 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: var(--white);
   margin-bottom: 51px;
 }
 
@@ -28,13 +27,11 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.04em;
-  color: var(--white);
   margin-bottom: 8px;
 }
 
 .how-use__text {
-  line-height: 1.25;
-  color: var(--white);
+  font-weight: 400;
   opacity: 0.8;
   width: 297px;
 }
@@ -45,8 +42,6 @@
 }
 
 .how-use__link {
-  font-weight: 500;
-  line-height: 1.25;
   text-transform: uppercase;
   padding: 16px 24px;
   display: grid;

@@ -31,12 +31,11 @@
 }
 
 .tariffs__btn-futures {
-  font-weight: 500;
   font-size: 18px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--q);
-  padding: 14px 47px 14px 39px;
+  padding: 14px 41px 14px 39px;
 }
 
 .tariffs__container-card {
@@ -77,10 +76,6 @@
   flex-shrink: 0;
 }
 
-.tariffs__card-text {
-  line-height: 1.25;
-}
-
 .tariffs__containe-price-discount-selected {
   display: flex;
   justify-content: space-between;
@@ -94,7 +89,6 @@
 }
 
 .tariffs__card-price {
-  font-weight: 500;
   font-size: 35px;
   line-height: 1.14;
   letter-spacing: -0.04em;
@@ -121,7 +115,6 @@
 
 .tariffs__container-selected-text,
 .tariffs__container-selected-item {
-  line-height: 1.25;
   color: var(--white);
 }
 
@@ -161,8 +154,6 @@
 }
 
 .tariffs__card-link {
-  font-weight: 500;
-  line-height: 1.25;
   padding: 8px 24px;
   display: grid;
   justify-content: center;

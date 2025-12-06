@@ -24,8 +24,6 @@
 }
 
 .footer__nav-link {
-  font-weight: 500;
-  line-height: 1.25;
   color: var(--white);
 }
 
@@ -41,6 +39,7 @@
 }
 
 .footer__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 143%;
   opacity: 0.5;
@@ -56,7 +55,7 @@
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: none;
     display: grid;
-    padding: 45px 100px 45px 0;
+    padding: 45px 90px 45px 0;
     margin: 0;
     gap: 224px;
   }

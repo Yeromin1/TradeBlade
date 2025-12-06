@@ -38,7 +38,7 @@
   opacity: 0.8;
   display: grid;
   gap: 4px;
-  width: 112px;
+  width: 122px;
 }
 
 .width {
@@ -46,7 +46,6 @@
 }
 
 .numbers__item-span {
-  font-weight: 500;
   font-size: 35px;
   line-height: 1.1;
   letter-spacing: -0.02em;

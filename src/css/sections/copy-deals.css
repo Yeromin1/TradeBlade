@@ -20,7 +20,6 @@
   font-size: 35px;
   line-height: 1.26;
   letter-spacing: -0.04em;
-  color: var(--white);
   margin-bottom: 12px;
   opacity: 0;
   animation: show 2s ease forwards;
@@ -165,6 +164,6 @@
 
   .copy-deals__bookmark {
     width: 650px;
-    top: 92%;
+    top: 93%;
   }
 }
