@@ -28,17 +28,17 @@
 }
 
 .copy-deals__text {
-  line-height: 1.25;
+  font-weight: 400;
   color: #e7f7f8;
   margin-bottom: 24px;
   opacity: 0;
-  animation: show 1.5s ease forwards;
+  animation: show-text 1.5s ease forwards;
   animation-delay: 3s;
 }
 
 .copy-deals__form {
   display: flex;
-  background-color: #201a4f;
+  background-color: var(--dark-indigo);
   justify-content: space-between;
   height: 50px;
   align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .form__email {
-  background-color: #201a4f;
+  background-color: var(--dark-indigo);
   border: none;
   outline: none;
   padding: 15px;
@@ -58,6 +58,7 @@
   line-height: 1.43;
   letter-spacing: -0.01em;
   color: var(--white);
+  opacity: 0.34;
 }
 
 .form__btn {
@@ -71,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #030718;
+  color: var(--black-blue);
 }
 
 .form__btn-start {
@@ -80,12 +81,13 @@
 }
 
 .copy-deals__info {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   color: var(--white);
   opacity: 0.3;
   opacity: 0;
-  animation: show 1.5s ease forwards;
+  animation: show-info 1.5s ease forwards;
   animation-delay: 4s;
 }
 
@@ -104,6 +106,28 @@
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-text {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-info {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.3;
     transform: translateY(0);
   }
 }

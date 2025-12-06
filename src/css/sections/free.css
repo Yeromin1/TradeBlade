@@ -34,7 +34,7 @@
 
 .free__form-email {
   border-radius: 4px;
-  background-color: #000;
+  background-color: var(--black);
   opacity: 0.3;
   font-weight: 500;
   font-size: 14px;
@@ -53,7 +53,7 @@
   background-color: var(--q);
   font-weight: 500;
   text-transform: uppercase;
-  color: #030718;
+  color: var(--black-blue);
 }
 
 @media (min-width: 1440px) {

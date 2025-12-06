@@ -16,7 +16,7 @@
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.04em;
-  color: #35ff9e;
+  color: var(--neon-mint);
   opacity: 0.9;
   position: relative;
   padding-left: 14px;
@@ -29,7 +29,7 @@
   border-radius: 3px;
   width: 7px;
   height: 7px;
-  background: #35ff9e;
+  background: var(--neon-mint);
   left: 2px;
   top: 8px;
 }
@@ -95,16 +95,16 @@
   font-size: 28px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: #35ff9e;
+  color: var(--neon-mint);
   display: grid;
   gap: 2px;
 }
 
 .past-transactions__icon {
-  stroke: #35ff9e;
+  stroke: var(--neon-mint);
   width: 14px;
   height: 25px;
-  fill: #35ff9e;
+  fill: var(--neon-mint);
 }
 
 .past-transactions__item-target {

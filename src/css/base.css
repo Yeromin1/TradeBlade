@@ -2,13 +2,30 @@
   --purple: #6a54ff;
   --q: #57e1ff;
   --white: #ffffff;
+  --black-blue: #030718;
+  --neon-mint: #35ff9e;
+  --black: #000;
+  --dark-indigo: #201a4f;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 .container {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
-  background-color: #030718;
+  background-color: var(--black-blue);
 }
 
 @media (min-width: 1440px) {

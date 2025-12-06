@@ -156,7 +156,7 @@
   .btn-login:hover {
     border: 1px solid var(--q);
     background-color: var(--q);
-    color: #030718;
+    color: var(--black-blue);
   }
 
   .btn-register {
